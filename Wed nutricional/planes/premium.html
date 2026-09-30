@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Premium - vitalife</title>
+    <link rel="stylesheet" href="../styles.css">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #0fbfb699;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos para el plan premium */
+        .plan-premium {
+            padding: 60px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .plan-premium h2 {
+            text-align: center;
+            color: #34ba3b;
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .contenedor-plan {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* imagen y texto en dos columnas */
+            gap: 30px;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .col.imagen img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .col.texto h3 {
+            font-size: 24px;
+            color: #34ba3b;
+            margin-bottom: 15px;
+        }
+
+        .col.texto p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .botones {
+            display: flex;
+            justify-content: center;
+            /* centra horizontalmente */
+            gap: 20px;
+            /* espacio entre botones */
+            margin-top: 30px;
+            /* separa del texto */
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #34ba3b;
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #2ddfd6;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../imagenes/logo1.png" alt="Logo Vitalife">
+    <p class="tagline">Tu guía para un camino saludable</p>
+    </div>
+    </header>
+
+    <main class="plan-premium">
+        <h2>Viajes y retiros saludables, experiencisas de bienestar en entornos naturales</h2>
+        <div class="contenedor-plan">
+            <!-- Imagen a la izquierda -->
+            <div class="col imagen">
+                <img src="data:image/jpeg;base64,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"
+                    alt="Plan Premium   - Talleres de cocina saludables">
+            </div>
+
+            <!-- Texto a la derecha -->
+            <div class="col texto">
+                <h3> Tu Camino Hacia una Vida Saludable: Ahora 100% Diseñado para Ti</h3>
+                <p>
+                    A veces, para encontrarnos, necesitamos perdernos en la naturaleza. El ritmo del día a día, las
+                    pantallas y la prisa constante nos desconectan de lo esencial. Por eso, en Experiencia Bienestar
+                    hemos creado el refugio perfecto: viajes y retiros diseñados para pausar el ruido exterior, renovar
+                    tu energía y devolverle el equilibrio a tu cuerpo y mente.
+
+                    Regálate la oportunidad de vivir unos días donde la naturaleza es el escenario y tu bienestar es la
+                    única prioridad. En cada destino, te sumergirás en un entorno que invita a la calma, la reflexión y
+                    la conexión contigo mismo.
+
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <main class="plan-premium">
+        <h2>Que te espera </h2>
+        <div class="contenedor-plan">
+            <!-- Texto a la izquierda -->
+            <div class="col texto">
+                <p>
+
+                    Entornos que Sanan: Nos trasladamos a paisajes imponentes y serenos desde montañas sagradas hasta
+                    costas tranquilas. Lugares seleccionados estratégicamente donde el aire puro, el silencio y el
+                    verde de la naturaleza facilitan una desconexión real y profunda.
+
+                    Asesoría y Nutrición Consciente: Durante el retiro, disfrutarás de menús exclusivos basados en una
+                    alimentación limpia, orgánica y local. Además, contarás con la guía de expertos que te enseñarán a
+                    nutrir tu cuerpo de manera consciente, adaptando estos aprendizajes a tu regreso a casa.
+
+                    Movimiento y Conexión: Despierta tu cuerpo con rutinas simples de movimiento, caminatas conscientes
+                    (senderismo), yoga al aire libre y sesiones de meditación guiada bajo las estrellas o al amanecer.
+                    Ejercicios diseñados para todos los niveles, enfocados en estirar, fortalecer y liberar tensiones.
+
+                    Seguimiento y Comunidad: No es solo un viaje de unos días; es el inicio de una nueva etapa. Vivirás
+                    esta experiencia junto a una comunidad que comparte tus mismos valores, y contarás con nuestro
+                    seguimiento posterior para ayudarte a integrar todo lo aprendido en tu vida cotidiana. </p>
+            </div>
+
+            <!-- Imagen a la derecha -->
+            <div class="col imagen">
+                <img src="https://viajestransformacionales.com/wp-content/uploads/2021/07/LUGARES-PARA-DESCONECTAR.jpg"
+                    alt="Plan premium  - talleres de cocina saludables">
+            </div>
+        </div>
+    </main>
+
+    <main class="plan-premium">
+        <h2>Desconectate del mundo </h2>
+        <div class="contenedor-plan">
+            <!-- Imagen a la izquierda -->
+            <div class="col imagen">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMYzFo434jrg2a3uD-FqY7NiIRGcGoRFrTvw&s"
+                    alt="Plan premium - talleres de cocina saludables">
+            </div>
+
+            <!-- Texto a la derecha -->
+            <div class="col texto">
+                <p>
+                    Desconéctate para volver a conectar. Regálate una pausa del ruido diario, las pantallas y las prisas
+                    en los retiros de Experiencia Bienestar, donde la naturaleza se convierte en tu refugio. Respira el
+                    aire puro de entornos naturales únicos, nutre tu cuerpo con alimentación consciente y reactiva tu
+                    energía con rutinas simples diseñadas para tu paz mental. Es momento de apagar el mundo exterior,
+                    escuchar a tu cuerpo y regresar a tu centro en un espacio creado exclusivamente para tu renovación.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <div class="botones">
+        <a href="../planes.html" class="btn">Regresar a los planes</a>
+        <a href="comprar.html" class="btn">Comprar</a>
+    </div>
+
+
+
+    <footer>
+        <p>© 2026 - Nuestra web</p>
+    </footer>
+
+</body>
+
+</html>

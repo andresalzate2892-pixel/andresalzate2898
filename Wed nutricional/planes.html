@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planes - Vitalife</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+ /* Sección Planes */
+main.planes {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #e8f5e9, #ffffff);
+}
+
+main.planes h2 {
+  text-align: center;
+  color: #34ba3b;
+  margin-bottom: 40px;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Contenedor en cuadrícula */
+main.planes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* cuadrícula flexible */
+  gap: 30px;
+}
+
+/* Tarjetas de planes */
+.bloque {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden; /* asegura que la imagen respete los bordes redondeados */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.bloque img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* recorta la imagen  */
+}
+
+.bloque h3 {
+  color: #34ba3b;
+  margin: 15px;
+  font-size: 22px;
+}
+
+.bloque p {
+  margin: 0 15px 20px 15px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Efecto hover */
+.bloque:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Botón */
+.btn {
+  display: inline-block;
+  padding: 10px 4px;
+  margin-bottom: 10px;
+  background-color: #34ba3b;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+}
+
+/* Contenedor de cada plan */
+.bloque img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;          /* recorta proporcionalmente */
+  object-position: center 20%; /* 👈 mueve el encuadre hacia abajo */
+  border-radius: 8px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+    </style>
+
+<script>
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("active");
+}
+</script>
+
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="imagenes/logo1.png" alt="Logo Vitalife">
+      <p class="tagline">Tu guía para un camino saludable</p>
+    </div>
+  </header>
+    <nav>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul id="menu">
+        <li><h2><a href="index.html">Inicio</a></h2></li>
+        <li><h2><a href="nosotros.html">Nosotros</a></h2></li>
+        <li><h2><a href="contacto.html">Contacto</a></h2></li>
+        <li><h2><a href="recetas.html">Recetas</a></h2></li>
+        <li><h2><a href="planes.html">Planes</a></h2></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="planes">
+    <h2>Planes Vitalife</h2>
+    <section class="bloque">
+      <img src="imagenes/planes1.png" alt="Plan Básico">
+      <h3>Plan Básico</h3>
+      <p class="planes">Acceso a guías de alimentación y rutinas simples para iniciar tu camino hacia una vida saludable.</p>
+      <a href="planes/basico.html" class="btn">Conocer más</a>
+    </section>
+
+    <section class="bloque">
+      <img src="imagenes/planes2.png" alt="Plan Avanzado">
+      <h3>Plan Avanzado</h3>
+      <p class="planes">Incluye asesoría nutricional personalizada, recetas exclusivas y seguimiento semanal.</p>
+      <a href="planes/avanzado.html" class="btn">Conocer más</a>
+    </section>
+
+    <section class="bloque">
+      <img src="imagenes/planes3.png" alt="Plan Premium">
+      <h3>Plan Premium</h3>
+      <p class="planes">Todo lo anterior más consultas virtuales con especialistas y acceso completo a la App Vitalife.</p>
+      <a href="planes/premium.html" class="btn">Conocer más</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 - Nuestra web</p>
+  </footer>
+</body>
+</html>

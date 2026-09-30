@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Vitalife</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .receta {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.receta h2 {
+  text-align: center;
+  color: #34ba3b;
+  margin-bottom: 20px;
+}
+
+.imagen-receta img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.beneficios, .preparacion {
+  margin-bottom: 30px;
+}
+
+.beneficios h3, .preparacion h3 {
+  color: #34ba3b;
+  margin-bottom: 10px;
+}
+
+.preparacion ol {
+  padding-left: 20px;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #34ba3b;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2ddfd6;
+  transform: scale(1.05);
+}
+
+/*para las estrellas*/
+
+.estrellas {
+  font-size: 30px;
+  cursor: pointer;
+  color: #ccc; /* gris por defecto */
+  transition: color 0.3s;
+}
+
+.estrellas input ::befoere {
+  color: gold; /* dorado cuando se selecciona */
+  font-size: 30px;
+  font-family: fontawesome;
+  content: ""; /* código de estrella en FontAwesome */
+}
+
+    </style>
+
+    <script>
+
+function mostrarCalificacion() {
+  document.getElementById("form-calificacion").style.display = "block";
+}
+
+function enviarCalificacion() {
+  let rating = document.querySelector('input[name="rating"]:checked');
+  let comentario = document.getElementById("comentario").value;
+
+  if (rating) {
+    console.log("Has calificado con " + rating.value + " estrellas ⭐");
+    console.log("Comentario: " + comentario);
+    alert("Has calificado con " + rating.value + " estrellas ⭐\nComentario: " + comentario);
+  } else {
+    alert("Por favor selecciona una cantidad de estrellas.");
+  }
+}
+    </script>
+</head>
+ <header>
+    <div class="logo">
+      <img src="../imagenes/logo1.png" alt="Logo Vitalife">
+      <p class="tagline">Tu guía para un camino saludable</p>
+    </div>
+  </header>
+<main class="receta">
+  <h2>Ensalada Energética</h2>
+  
+  <!-- Imagen grande -->
+  <div class="imagen-receta">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfepS5AVgO4Ke5yqbCaO5BJEU95dQQMK1Abg&s" alt="Ensalada Energética">
+  </div>
+
+  <!-- Beneficios -->
+  <section class="beneficios">
+    <h3>Beneficios</h3>
+    <p>
+      Esta ensalada aporta vitaminas, minerales y proteínas que ayudan a mantener tu energía
+      durante el día. Es ligera, fresca y perfecta para acompañar cualquier comida.
+    </p>
+  </section>
+
+  <!-- Preparación paso a paso -->
+  <section class="preparacion">
+    <h3>Preparación</h3>
+    <ol>
+      <li>Lava y corta los vegetales frescos.</li>
+      <li>Agrega una fuente de proteína (pollo, atún o garbanzos).</li>
+      <li>Mezcla con un aderezo natural (limón, aceite de oliva, sal ligera).</li>
+      <li>Sirve en un bowl y disfruta.</li>
+    </ol>
+  </section>
+
+  <!-- Botones -->
+  <div class="botones">
+    <a href="../recetas.html" class="btn">Volver a Recetas</a>
+<a href="#" class="btn" onclick="mostrarCalificacion()">Calificar Receta</a>
+  </div>
+</main>
+
+<div id="form-calificacion" style="display:none; margin-top:30px;">
+  <h3>Califica esta receta</h3>
+  <form>
+    <div class="estrellas">
+      <input type="radio" id="estrella5" name="rating" value="1">
+      <label for="estrella5">1⭐</label>
+
+      <input type="radio" id="estrella4" name="rating" value="2">
+      <label for="estrella4">2⭐</label>
+
+      <input type="radio" id="estrella3" name="rating" value="3">
+      <label for="estrella3">3⭐</label>
+
+      <input type="radio" id="estrella2" name="rating" value="4">
+      <label for="estrella2">4⭐</label>
+
+      <input type="radio" id="estrella1" name="rating" value="5">
+      <label for="estrella1">5⭐</label>
+    </div>
+
+    <label for="comentario">Comentario:</label>
+    <textarea id="comentario" rows="4"></textarea>
+
+    <button type="button" class="btn" onclick="enviarCalificacion()">Enviar</button>
+  </form>
+</div>
+<footer>
+  <p>© 2026 - Nuestra web</p>
+</footer>
+
+</body>
+</html>
+    

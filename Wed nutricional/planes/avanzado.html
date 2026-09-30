@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Avanzado - vitalife
+    </title>
+    <link rel="stylesheet" href="../styles.css">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #0fbfb699;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos para el plan avanzado */
+        .plan-avanzado {
+            padding: 60px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .plan-avanzado h2 {
+            text-align: center;
+            color: #34ba3b;
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .contenedor-plan {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* imagen y texto en dos columnas */
+            gap: 30px;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .col.imagen img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .col.texto h3 {
+            font-size: 24px;
+            color: #34ba3b;
+            margin-bottom: 15px;
+        }
+
+        .col.texto p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .botones {
+            display: flex;
+            justify-content: center;
+            /* centra horizontalmente */
+            gap: 20px;
+            /* espacio entre botones */
+            margin-top: 30px;
+            /* separa del texto */
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #34ba3b;
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #2ddfd6;
+            transform: scale(1.05);
+        }
+    </style>
+
+    <script>
+
+function mostrarCompra() {
+  document.getElementById("form-compra").style.display = "block";
+}
+
+function confirmarCompra() {
+  let nombre = document.getElementById("nombre").value;
+  let correo = document.getElementById("correo").value;
+  let plan = document.getElementById("plan").value;
+
+  if(nombre && correo) {
+    alert("¡Gracias " + nombre + "! Has comprado el " + plan + ". Te enviaremos la información a " + correo);
+  } else {
+    alert("Por favor completa todos los campos.");
+  }
+}
+
+
+    </script>
+</head>
+
+<body>
+    <img src="../imagenes/logo1.png" alt="Logo Vitalife">
+    <p class="tagline">Tu guía para un camino saludable</p>
+    </div>
+    </header>
+
+    <main class="plan-avanzado">
+        <h2>Talleres de cocina saludables</h2>
+        <div class="contenedor-plan">
+            <!-- Imagen a la izquierda -->
+            <div class="col imagen">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ66BLTuDPwUzZGRpeaAEVJScIQfv84jfa2w&s"
+                    alt="Plan Avanzado - Talleres de cocina saludables">
+            </div>
+
+            <!-- Texto a la derecha -->
+            <div class="col texto">
+                <h3> Tu Camino Hacia una Vida Saludable: Ahora 100% Diseñado para Ti</h3>
+                <p>
+                    Tu Camino Hacia una Vida Saludable: Ahora 100% Diseñado para Ti
+                    Saber que queremos un cambio es el primer paso, pero el verdadero éxito llega cuando tienes el mapa
+                    exacto y a alguien que te acompaña en el camino. Ya no estás solo en esto. Queremos que dejes atrás
+                    las soluciones genéricas y experimentes un bienestar real, adaptado por completo a tu cuerpo, tus
+                    gustos y tus horarios.
+
+                    Para que alcances tus metas de forma segura y sin frustraciones, hemos transformado el concepto de
+                    bienestar con tres pilares fundamentales:
+
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <main class="plan-avanzado">
+        <h2>Asesoría Nutricional Personalizada</h2>
+        <div class="contenedor-plan">
+            <!-- Texto a la izquierda -->
+            <div class="col texto">
+                <p>
+                
+                    Cada cuerpo es un mundo y las dietas de internet no funcionan para todos. Con nuestra asesoría,
+                    obtienes un plan de alimentación diseñado exclusivamente para ti.
+
+                    Hecho a tu medida: Evaluamos tus objetivos (ya sea tener más energía, mejorar tu digestión o
+                    transformar tu composición corporal), tus necesidades y tu estilo de vida.
+
+                    Sin pasar hambre: Un enfoque flexible que se adapta a lo que te gusta comer, demostrándote que comer
+                    sano es delicioso y sostenible.
+                    Comer saludable jamás volverá a ser aburrido o monótono. Tendrás acceso a un recetario premium
+                    diseñado por expertos.
+
+                    Fáciles y rápidas: Platos creativos, llenos de sabor y con ingredientes sencillos que puedes
+                    preparar en pocos minutos.
+
+                    Opciones para todos: Desde desayunos energéticos hasta cenas ligeras y snacks saludables que
+                    calmarán tus antojos sin culpa. </p>
+            </div>
+
+            <!-- Imagen a la derecha -->
+            <div class="col imagen">
+                <img src="https://cdn.prod.website-files.com/6232253a9b37533306905c0a/661570a7d18d89ebeca2cb62_nutricion-personalizada%20(1).jpg"
+                    alt="Plan avanzado  - talleres de cocina saludables">
+            </div>
+        </div>
+    </main>
+
+    <main class="plan-avanzado">
+        <h2>Seguimiento Continuo</h2>
+        <div class="contenedor-plan">
+            <!-- Imagen a la izquierda -->
+            <div class="col imagen">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREt8fuFe1tL9rA5m4r9bhKZY3iE-VAhxlh8w&s"
+                    alt="Plan avanzado - talleres de cocina saludables">
+            </div>
+
+            <!-- Texto a la derecha -->
+            <div class="col texto">
+                <p>
+                     Seguimiento Continuo
+                    El mayor desafío de un nuevo hábito es mantenerlo. Por eso, no te soltamos de la mano.
+
+                    Motivación y ajuste: Estaremos contigo midiendo tus avances, celebrando tus logros y ajustando el
+                    plan cuando sea necesario para que nunca te estanques.
+
+                    Apoyo constante: Un canal abierto para resolver tus dudas, vencer los momentos de desmotivación y
+                    asegurar que te mantengas firme hacia tu meta.
+
+                    El bienestar que se adapta a tu vida, no al revés.
+                    Con herramientas sencillas, un plan exclusivo y nuestro equipo guiándote paso a paso, el éxito no es
+                    una posibilidad: es un hecho. ¡Empecemos hoy a construir tu mejor versión!
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <div class="botones">
+        <a href="../planes.html" class="btn">Regresar a los planes</a>
+        <a href="comprar.html" class="btn">Comprar</a>
+    </div>
+
+<a href="#" class="btn" onclick="mostrarCompra()">Comprar</a>
+
+<div id="form-compra" style="display:none; margin-top:30px;">
+  <h3>Completa tu compra</h3>
+  <form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required>
+
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" required>
+
+    <label for="plan">Plan seleccionado:</label>
+    <input type="text" id="plan" value="Plan Avanzado" readonly>
+
+    <button type="button" class="btn" onclick="confirmarCompra()">Confirmar</button>
+  </form>
+</div>
+
+
+    <footer>
+        <p>© 2026 - Nuestra web</p>
+    </footer>
+
+</body>
+
+</html>

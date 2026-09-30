@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Vitalife</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        main.contacto {
+            background: url(https://img.magnific.com/foto-gratis/recepcion-clinica-sala-espera-vestibulo-instalaciones-mostrador-registro-utilizado-pacientes-citas-medicas-mostrador-recepcion-vacio-centro-salud-visitas-control_482257-51247.jpg?semt=ais_hybrid&w=740&q=80) no-repeat center center fixed;
+            background-size: cover;
+        }
+    </style>
+    <script>
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("active");
+}
+</script>
+
+</head>
+ <header>
+    <div class="logo">
+      <img src="imagenes/logo1.png" alt="Logo Vitalife">
+      <p class="tagline">Tu guía para un camino saludable</p>
+    </div>
+  </header>
+
+    <nav>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul id="menu">
+        <li><h2><a href="index.html">Inicio</a></h2></li>
+        <li><h2><a href="nosotros.html">Nosotros</a></h2></li>
+        <li><h2><a href="contacto.html">Contacto</a></h2></li>
+        <li><h2><a href="recetas.html">Recetas</a></h2></li>
+        <li><h2><a href="planes.html">Planes</a></h2></li>
+      </ul>
+    </nav>
+
+<main class="contacto">
+    <h2>Contáctenos - Vitalife</h2>
+
+    <section class="info-contacto">
+      <h3>Información de contacto</h3>
+      <p><strong>Correo electrónico:</strong> contacto@vitalife.com</p>
+      <p><strong>Teléfono:</strong> +57 300 000 0000</p>
+      <p><strong>Dirección:</strong> Medellín, Antioquia, Colombia</p>
+      <p><strong>Horario de atención:</strong> Lunes a viernes, 8:00 a.m. – 6:00 p.m.</p>
+    </section>
+
+    <section class="mensaje">
+      <p>En Vitalife creemos que la salud comienza con la comunicación. Escríbenos para resolver tus dudas, recibir asesoría nutricional o conocer más sobre nuestra plataforma. Estamos aquí para acompañarte en tu camino hacia una vida saludable.</p>
+    </section>
+
+    <section class="formulario">
+      <form action="#" method="post">
+        <label for="nombre">Nombres</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellido">Apellidos</label>
+        <input type="text" id="apellido" name="apellido" required>
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="celular">Número celular</label>
+        <input type="tel" id="celular" name="celular" required>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+
+
+<footer>
+  <p>© 2026 - Nuestra web</p>
+</footer>
+
+</body>
+</html>
+    

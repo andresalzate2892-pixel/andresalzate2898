@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros - Vitalife</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+  
+
+    /* Sección Nosotros */
+main.nosotros {
+  padding: 60px 20px;
+  background: url(https://centromedicoabc.com/wp-content/uploads/2024/07/Consultorio-medico-que-es-scaled.webp) no-repeat center center fixed;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* dos columnas */
+  gap: 40px; /* espacio entre cajitas */
+  justify-items: center; /* centra las cajas dentro de la columna */
+
+}
+
+/* Bloques individuales */
+.bloque {
+  width: 100%;              /* ocupa todo el ancho de la columna */
+  max-width: 500px;         /* tamaño máximo de cada caja */
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover */
+.bloque:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Títulos */
+.bloque h2 {
+  color: #34ba3b;
+  margin-bottom: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: #2ddfd6 2px 2px 6px;
+}
+
+/* Texto */
+.nosotros {
+  color: #333;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Estilos generales ya definidos arriba */
+
+/* 📱 Para pantallas medianas (tablets) */
+@media (max-width: 992px) {
+  main.nosotros {
+    grid-template-columns: 1fr; /* una sola columna */
+    gap: 20px;
+    padding: 40px 15px;
+  }
+
+  .bloque {
+    max-width: 100%; /* que ocupe todo el ancho disponible */
+  }
+
+  .bloque h2 {
+    font-size: 28px;
+  }
+
+  .nosotros {
+    font-size: 16px;
+  }
+}
+
+/* 📱 Para pantallas pequeñas (celulares) */
+@media (max-width: 600px) {
+  main.nosotros {
+    grid-template-columns: 1fr; /* una sola columna */
+    padding: 20px 10px;
+  }
+
+  .bloque {
+    padding: 20px;
+    font-size: 15px;
+  }
+
+  .bloque h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .nosotros {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 0;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+}
+
+
+  </style>
+  <script>
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("active");
+}
+</script>
+
+</head>
+
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="imagenes/logo1.png" alt="Logo Vitalife">
+      <p class="tagline">Tu guía para un camino saludable</p>
+    </div>
+  </header>
+    <nav>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul id="menu">
+        <li><h2><a href="index.html">Inicio</a></h2></li>
+        <li><h2><a href="nosotros.html">Nosotros</a></h2></li>
+        <li><h2><a href="contacto.html">Contacto</a></h2></li>
+        <li><h2><a href="recetas.html">Recetas</a></h2></li>
+        <li><h2><a href="planes.html">Planes</a></h2></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="nosotros">
+    <section class="bloque">
+      <h2>Quiénes Somos</h2>
+      <p class="nosotros">Vitalife es una plataforma dedicada a promover la salud y el bienestar a través de la tecnología, ofreciendo soluciones digitales que fortalecen la nutrición y mejoran la calidad de vida de las personas.</p>
+    </section>
+
+    <section class="bloque">
+      <h2>Misión</h2>
+      <p class="nosotros">Promover hábitos saludables y educación nutricional mediante herramientas tecnológicas seguras, intuitivas y personalizadas, que permitan a las personas gestionar su bienestar físico y emocional de manera autónoma y sostenible.</p>
+    </section>
+
+    <section class="bloque">
+      <h2>Visión</h2>
+      <p class="nosotros">Para el año 2030, Vitalife será reconocida como una plataforma líder en salud digital en Latinoamérica, destacada por su impacto positivo en la prevención de enfermedades y su contribución al desarrollo de comunidades más saludables y educadas.</p>
+    </section>
+
+    <section class="bloque valores">
+      <h2>Valores</h2>
+      <ul>
+        <li><strong>Innovación:</strong> Aplicamos tecnología para transformar la educación nutricional.</li>
+        <li><strong>Accesibilidad:</strong> Garantizamos que cualquier persona pueda usar la plataforma fácilmente.</li>
+        <li><strong>Sostenibilidad:</strong> Promovemos hábitos que benefician tanto al individuo como al entorno.</li>
+        <li><strong>Confianza:</strong> Protegemos los datos y brindamos información verificada.</li>
+        <li><strong>Empatía:</strong> Entendemos las necesidades de cada usuario y lo acompañamos en su proceso.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 - Nuestra web</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profesional - Vitalife</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .contenedor-profesional {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            /* imagen y texto */
+            gap: 30px;
+            align-items: start;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+
+        .col.imagen img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .col.texto h3 {
+            color: #34ba3b;
+            margin-bottom: 15px;
+        }
+
+        .agendar {
+            margin-top: 30px;
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .agendar h4 {
+            margin-bottom: 15px;
+            color: #34ba3b;
+        }
+
+        .agendar label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .agendar input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        .agendar .btn {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #34ba3b;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .agendar .btn:hover {
+            background-color: #2ddfd6;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../imagenes/logo1.png" alt="Logo Vitalife">
+            <p class="tagline">Tu guía para un camino saludable</p>
+        </div>
+    </header>
+
+    <main class="profesional">
+        <h2>Verónica Fuentes</h2>
+        <div class="contenedor-profesional">
+            <!-- Imagen del profesional -->
+            <div class="col imagen">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxASEhIQEBAWDxUVEhUYFxUVDxUVFxUVFRUWFhUVFhUYHSggGBolHRUVIjEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi8dHyUtLS0tKy0rLS0tLS0tLS0tLS0tLS0tLS0tLS0tLystKy0tLS0tLS0tLS0tLS01LS0tK//AABEIARMAtwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAACAAEDBAYFBwj/xAA9EAABAwIDBgMECQQBBQEAAAABAAIRAyEEEjEFBkFRYYEicZETMqGxBxRCUoLB0eHwI3KS8cJTYmNzojP/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQIEAwUG/8QAJBEBAQACAgICAwADAQAAAAAAAAECEQMhEjEEQSIyUSOBoQX/2gAMAwEAAhEDEQA/APSmtRhqcBGAqQENRBqIBOAgBARQihKEAMJ4RQnQYYShFCUIAYShEkgBhNCJJADCaESYoIJCEhGmKAAhCQpCEJCAjIQFqmIQkICBzUlKQkgkwCIBIJwgzpwknCASdIJwgyShOkUAyS5O3N4KGEYalZ0DgOLjyaOJXj+9H0jYzEEtouOFp8mu8R/ufr2Ed0tnI90NRvMeqfMF8sv2jVJzGo5x55yT6yrmE2pimPbUZXqUyOIqOm3Q2hGx4vppMvB9n/SRtKk7x1RXE6VGMHo5gC9C3Z+kXD4mGVWmhU88zD+LUd/VGx41tSmKCnWDhIIKKUyJMkmQCSTJIIk0IkyAAhJHCSAJOmToB06ZOEGIJwmCRKAYvWZ3z3ibhKJq+8TZrZjM46drGV09ubSbQo1KjiAGtMz5cl4LvhvHWxZl7oa0nK0CwB4nmYhTarGbVttbZrYh5q1nFx4AWAH3WjguO0Oeb/BSHVrf5Oi227m7ocA9w/QfqVGWUxjrhx3O9OXu/sUvP/5wOoXfq7rh2oWvwWz2sEAQrXsFmudt22Y8eMmnlO0d1qjZLAT/ADgs+XupuhwLSOy9vxOHtospvFsNlZpIEOGhVY8v1XPPhnvFX3O3rrNc2makiwANwel7L1XZ+0RUE8R/LSvnMB1GpBsQbr0jdXeFx9+RoC6S4EGwPSCu8y0zZY7epNfKclUcLXGUc5/ZXJXRxOkmSTAk6FOEEdJJOgHSSToBJ0k6DOENR0C6dcvbeOFNj3cQ0kecIDBfSbtum5n1em8OIeC8AyLXgxyMFeU1ngmBfn+fzXU21UJMcb5jMkuJMz8uy4zyAFHt19RYwdMmrT55vhaV7NsWkAxgiwAXj2znDO13Ir13ZD/C3yCz83uNfBPxrRMDSLIXtQ4aswXc9rfNwCMYlj/dcHRyMqPo/tXrskLO4jGMzFrWvqQYJYwuAPUrtbXoOq5aYeWNJl8WcWjgDwWaxu3YLsPhqbKbabHEGo/Lmy8GsALjPAnW3MImOzuWmX3+wEBmJYOMOsRroSD6LmbA2g5pEEFvEHkdb8OC3owlXFYVzcRT9mXtIAmSD9knvC8twJLHvYbFpLSOUGCF0wvWv448k/Lf9e37t4uo6mGuBJABkQJB0sYP7rVUKkifyhYDdjaYexjmuJySyw1aBIsPMFbrC1ARb+Su+NZsosykmSVoEEQQBEEASdMnQBJ0k6AZOkkgBqOgLC7144exe6o8e84NaNQGugucZgchp7wWo2xiiMrWySSZjhAPH0HdeSfSHiy14w4sfeIB0JaAB8z3StVjGMe43Hn6klUKrpMcZMdIV3EyMo5kEnyMqhUqSSY4qYureCMOA5r1fAU3PpsbJaIGYgwcsaA8OF15CKhGXtC9Z3ZxXtKbB95gH6rhzfVavj3qxPjdq4Gk0tbhxWc0gEnLlaSJDTUeYDiATAvF129mkQ4CkKRESG3aZ5OAE/MckOB3fw9OSyndzsxMkyTxgmPguqGAA8OpUWyxU3Kp4p/uvHDVRswlIwQIiw4xHXVWKVLNLeYJ9FUFUsIbmvPu9J1Uel6WK1LwwvHd/cKKGMcWiBVY2p+Iy13xbP4l7LVr+GJBnkvK/pWb/WwzudN4/wAXA/8AJdOO/k5836lujiXiSJAtcffPumOdu8wvYNn1mujL7pb/ACV4vuhimDOx0+IAiNQW+IeWkg9F6duxiy6mHmwe4lpiLCbEcDF46rtOqy5TbWJIWlOF1cRhEEARhMCSSCSAlTpJIBIXFGq+ImDawHqgM/tnFZKb3F18xHPR0SBw/wBrw/bONNWo+qTJLjcn1Xon0hYwty02yS6MrQDLi4mAAPL5aceNgNz2syVHvLntcHFoA9nIM5eZ5E8eSyfI+Tx8M3ndO2OPTJ42jTpMPtZdVIEU229nMGapI96PsDSbkGy4NRnAHy8l1Nt4arRqltU5yZOb7xcTJ8yVzM4AnjounFlMsfKXexl7Kq42tpHcL0XdTEgMpPbIaRfo79/mvPJzMtwlPhtr16bDTp1C1uYOIgatIPpIuE88PKOnFyTC7r6L2Vi5F7qZ5a50GwF/0WO3Q20zEUmvaYdo5vJw1H84LQ1KNV4/pvDDzLc3aJCy7s6rVZL3FjEFrRJqkch4dPSVzqLXvcfq9M1CdXnTu7S0/spsLVpUzFbDl7/vvqSDbhaB6WVnaG3H1GmnSaGA8GG54awAF01j9rmOX1P931/xysC17qtQVS3LTcAMswSAC4knkbdl5z9JuKDsRSpj7FIz5vdMejWnuvTCwUaTnPMQ1znHkIk/D5LwzaGLNarUrv8Aee8ujkPst7DKOyOKfltw+RlPUTYCsWODhcyvW92HvbkAdnBElkiw0ETeRAv1XkOHtdeg7kbSa7wvAIEeISHA6WI7LtWf6erUHWuplVwAdkbmMnKJVtdI4UgjCEIgmQwkkEkwmTpJ0Ay5e2MaKVOo9x8LWFx5wOA6/quo50XKy2262f2jH0nPa5haGtIcSSAbgG2uptbVLK6VjNsNs8VMTXOLq+6yW0mn7x1I6NB7kg8FraOFhoka8lQwGFdTayg5uVzabRcyb6udAEOJkkdVoqzWCeIaz4xH6L5f5uV5eTLfUx6d5O3jH0iUv61M/wBw+IWQIkxELd/STSgUjqfaEdspn8lhACXROnFev/5uW/jYlnO0lR8Gwtef9qEsBkwZVptzfkosCxznZWwJPEwAOcrfEV3dwsSWYj2c5c7Y/E27f+S9bw2Ke33vXn5rx/ZFMjEUS0aPbfrMH817dh6UtFpssvN+zZw/p2tYbEseOvJSPcxugCq0sNTOog+iatQEQPmo2rTib4ONTC4hgtmpPH/yV4zjNm1aPszVbDajczHAyHjjlPS08pHML3PatD+m8agMPyXK2PusMZsZtB4zVKb6ppHjLKjw0T1b4fRduDvcceeakryHDNnVd/d+u5lRmXg9seZMfmqzN2sSJqU2GqxrgDlu5v8AezUDW4tY6IsLRIr5TLXNLTrBkRofX0XTKa9uWPfp7jsPaPtA5pGVzYBBI1IXXCxu6m1GEuovEVGEEmQS4O0c7Lx691sgrxvTjlNU4RBCEQVJGEkgkmE6dME6AjrvDWku08llN5dqnC0HVW5Q8kASJJLjwHGBJ7LU4mjnaWzH7EH8lmdu7FpYljmVW+MAwZuxxGo6H4hcOXfTRwa7ZPd3G1sQ576LXVIcM73kCSRpPTSwWoqYHFkGzBI+8f0VbcrZZwlCq2o3I72jnEAg8ABEc4HqurUcyjS9tiS5wtJguIDjAGVvUgWC87P4PDnbbvvv27zGS7edb97uY17WNZRNQNOYvbBaBBBzTcRYzpc3Xl9BsieuvIL6DxdbBYqlUp+zqFjmkEtaWEiLx+68NxrKJqvGGFQUvsmrGdw4uIaIHQcgOK2/Hwxww8MZ1HPlx1VZ5gXFzyWs3D3P+suFSo4inPi4AgdfJZVlAA3vf/a9m3Cw2fDsYBlaZzdQNB3M26dVr45Le3DLpzN4NiMp46m6k2KJpU8jhdrsogweenqtjgT4QF2a+zadRgpOHhgAEatLZDXN5ELj/V6lJ3s6kW0I+0ODlk58LMt/TZw8kyx8ftYa3oiDU4jySe8AEzoFxW5+Jpmpna0STYAcSeC6uxsI/DUaFEke87MRzcS6Ae8Kfd/Z5Y32jx4nGQD9lp59SruKpZojQGe62cHHrusnPyb/ABjJbd2f9VxjcVTtSqkCq0fedq6OsA+fmrGP3TwuLJq+zFOpENqsEOtoYFnd54rt7awXtWEdR8rfGPRRbv4kGm1n2hIib26eULRZuds0tl6cHaOwKjXU3UWgFhdJDRJBEQWgguETYHUNXb2ZVc6m3McxuJy5ZgkAxwkBdlzJuoa1Aa8fmufhq7irluaquEQQpwghhJMEkBZCdME6YJzoE8lkdrbSNKHVqzSQ/K3LTu5pI8RIMZQCCbWIK168z3to1X4trqtU06U1KbSxwszITy1MEEayeS58np04v2aik7PYnUgx6R5qHevBOqUCGguIc3KBpIN7eU3Kwm7O23uruo0w59OT7IXJY1ti2TqzTXSRw09I2bjA8QTdZtfVbN61lHL3ZoNNODY8RyK8/wB/N2G0atasyweC8AWDXD37RobH8RXq7sABJZYgkgjkTMLIfSTQe/Cl0wWPbPVrpYR6uaunH1U8l8t15Zg9l1HFpbcEB0cTrI87Hp8F7PuHimVKINNhYGw2D/aNDxGmq8zwNJxbTa57qZc12U6AtbAptYeGpJm8zyXrW52EbTotYG5DEkef+vgtWPTLl6aihTtKi2ngvaNsPE27T8x3/RTUbI6VWRcQePG41RljuaqMcrjdxlHlT7IwvtHZiPAw3/7ncB5ftzU238MGu9oLB8zyDgPzA9R1Xa2dhhTpNbxyifM3PxWPDh/yd/Tbyc3+Pc+xVMxEDwzx4omsAsEXFMtrCjr0czHAawY8+HxWe2QA3EVRET4h0DhJHaQtLTKzeJrNGKJFpDm34nKHEj/D4pxNaNmiB4T0Tb+ckSRqNdnFRBWsQOHIFVVNAgkmCSRradME6YJwsYMW15LL7YwVGhQr1qjWNqGk9gcSXyXCAGh2hcTcXnnZahcvebCsqUHMe0uuIDR4pGmXrx7Kcp0rC9vMty9jua4uyxkg+FxzHMHgzFwOfE2tz3rdh+zzPpZgJzZXOJni6JuPLp1VfcLZtQUKj6pM1H+EQIDGjwuBFjOaZgcBqFrmiQR0hThxy49uufLfLpx8JiJbKz+/PiwlYC3uTb/yNXXwfhaB29FS21hBVpVqZ40nO7tGYfELjx3djtnNSsJudsr6xSLCxxafCahIhga4k5JMzpEDW50XqWymFp8VxAE8RHz1WZ3BpZKdRljlr1NBGsEW7rcUqa2SaY8strLE2jo5378UmtjRDXNgeR/2gkW1MD7alUpTlLmkB33XfZd2MK211uyTDomJ16pa7PfWiHFMUmaKNxkwNB8TyTSBjy4wNB8T+iyW0aT6hxNekb0nwwROYt9+PMR6rWB+UE8mk+glZHYuBFV2LY6LBrA4NuHOZmcZPKWfHmnstbaHdzaHt6Aq6SfyFwum48lntx6Thhmh1jneTHOYI9Z9Foig1eu2GOPEqq8XIVzEXgKtih4uwU0IwmSSUmup0ySYOmcwHVOnCAbDUWsblaMouYHMkk/ElG+wzaQE7SndyVEzGDqSCeZJ9TKckZzOhpuHqL/CVWoPyVKlB1nU3EebNWO7tI7yliAXODR9rwdn+Fx7Ak9lh4+s5v8Ar0M5vG6/jnbjvk1//cPjTplb2iLLBbrtbQrPwz6gNUtY/LEWgtMc4LSOy3lAr0K89YaEzmzI5owkoNBhzbyMKWvp3/IqGlq7+5S1xIHmPmgI3HRo1PwCMNgQEFAXcesdhZSFMles0QZE+A2OhtoVS2bTZlD6YyteC8c/GcwnsQOy6FZk2529bKtgqLWMY1vutaGidYAgT6ICDdqjloC0ZqlV/Z9V7x8CuiXX8lU2PPsKQIg5Gk9JEwrccE6AtF5UOPboVZAVfHusPNKhTSTJKDXk6FOmDpwhUjbBOEaCjagDpPRSKgzu9uAPgxVP3qYyv60yZB/Cfg48ln8VtQNyPn3XtcfJrgfyXoa8/wB6d1azXF2FYarHfYBEsPK5u3ly4rPycf5eUbODklnhkl2lgCcVUxDcrmvo0n03A3b7JzqjjPIipU0la7A1szQVj94HPouwbHTlGGq0yOBqZA1k8tStFsqpYLV9Md9u60o1BTKkUGiafE4dfyCleYv0UJHi8x8kVWSY8v1QEjBAATlJMSgIMe+Kb3cmk+glR6NHQfkod4J+r1gNchSx7v6dSP8Apu9cpThJNkscKTC73i0EjlI07aK0mpkR/OCRKKClUsa7RWyIVLFahK+ghlJCkoN0EkySYOpoUKlCqEcI0BFgUQKASZ7k5KiqINivpNxDqeFbVa3NlrskccpzAx1uD2Um5G2qeJYcp8TdRofRWt9KAfgq8j3QH/4uBPwlYDY2De1za1BxpvBBBHHo4cWniFzz5fC6vp34+Hzx3Pb2Wk/Tqpg5cDCbca5v9RppOHDUHyI/OF18NjGPbIPDSVcyl9ONxuPuJa74h3UD1MfojDpuo6zJaR0/0iY6w6gKkpkDinzKPNdAQY/3HDoVytr4zLRdluSWtA5l72tHzXTxr/C4ayDYCVQ2ZggGNfWEmQ4NP2SDLSeswY4KseuydakwwByH8KlQU6wOiclTTJy52L1XRlc3GnxdlNCFJNKSk3QSTJJgSkadO6iUjHBOEm4IGlJjoskbFUClR1jZGSFBWMkBIOXvHTLsJiAAXTSeIGp8J0WY3fwtgVr9sODabxa1N5M6e6bHvHqsrgZYAIvHAErN8idxt+NfxrqPYgcOyiq12jUx5ofrAWW9NE7XdnYtzarA5xLScpBcSPFYfEhazKFga9YRbVbrB1xUpsqD7TQe5Fx6rV8fLcsrL8nDWqMJFieE4K0sqLIRogrMzNINpCslVaplGyRUaeURorIM6oGOslmhMETFiubineIq5iqwtGq5zjdTkISSGU6k3RlJMkmBJIU6ANruBSc46SglEGSqlI8pmwAXu7JnUyFDXoOfAcbckw5GNovxTwwEinMui2cjT8I1XZw2zG04ygWEacOpVjB4YNurKLo93Wld1MEeJg9AQuTjt3aLvEwFnRpt2BXdcUCVxl9njncfVYjGbv1QfA4VOnuu9Db4rQbo1HeyNJ4LSx1pBHhdca9cy6NRgmUsNM3GvwUTixxu46Zc+WePjktEpSmKEuVuR3usVBIQV6sqs6qOJQS1KWZc91ccLqF1Z3OEBbxBA4yVUlCXFNKm0xykhBSSDpSnlRgpwUwOU8oZSlAErFMKuzVWAVUI7kiEIRQmBgp5QBOgCKaUxKSAF4UTXGVM8qJ0JhI+q0alVatcmzQiyyip00go1Gu4lU6jIN+NwutiWqCrQD6Y4EaHkmFYaKElMHkS02ITEqMjgpSlDKYuUhICkow5JAdAORhyrhyMOVEnBTyoQ5PmQFmmjlRNKllVAklFKja5FKYElKGUyQHKIFRyilAA911G42SLtUBNkwkp6KZigplTBIIMXooWOhvmFPidFz61SGphzcTW/qeikLlzXVJeT1VwPU5KSlyAuQFyAvUknDk6gDkkB0GlGE6SZCCNqSSAsBShJJWBIkkkAycJJIB0ikkkEHNRsNkkkwmoqZJJAQ4hcbaBskkgOE03CvA2SSU5KCSgJSSUkUpJJID/2Q=="
+                 alt="Verónica Fuentes - Especialista en bienestar integral">
+            </div>
+
+            <!-- Descripción -->
+            <div class="col texto">
+                <h3>Especialista en bienestar integral</h3>
+                <p>
+                    Verónica Fuentes se dedica al bienestar integral, combinando nutrición,
+                    salud emocional y hábitos de vida. Su enfoque es holístico, ayudando a
+                    las personas a encontrar equilibrio entre cuerpo y mente.
+                </p>
+
+                <!-- Bloque para agendar cita -->
+                <div class="agendar">
+                    <h4>Agendar una cita</h4>
+                    <form action="agendar.php" method="post">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+
+                        <label for="fecha">Fecha:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+
+                        <label for="hora">Hora:</label>
+                        <input type="time" id="hora" name="hora" required>
+
+                        <button type="submit" class="btn">Agendar</button>
+                        <a href="../index.html" class="btn"> Volver </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 - Nuestra web</p>
+    </footer>
+</body>
+
+</html>
